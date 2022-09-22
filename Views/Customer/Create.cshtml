@@ -1,0 +1,75 @@
+﻿@model Customer
+
+
+@*<partial name="_Notification" />*@
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class=" = row pb-2">
+            <h2 class="text-primary">Create New Customer</h2>
+            <hr />
+        </div>
+        <div asp-validation-summary="All"></div>
+        <div class=" mb-3">
+            <label asp-for="FirstName"></label>
+            <input asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="MiddleName"></label>
+            <input asp-for="MiddleName" class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="City"></label>
+            <input asp-for="City" class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="LandMark"></label>
+            <input asp-for="LandMark" class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="State"></label>
+            <input asp-for="State" class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="Mobile"></label>
+            <input asp-for="Mobile" class="form-control" />
+
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+        <a asp-controller="Customer" asp-action="Index" class="btn btn-secondary" style="width:150px">Back To List</a>
+    </div>
+
+
+
+
+
+</form>
+@*section Scripts{
+    @{
+    <partial name=*_ValidationScriptsPartial* />
+    }
+}*@
+
+
+
+

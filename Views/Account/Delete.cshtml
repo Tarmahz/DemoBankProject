@@ -1,0 +1,40 @@
+﻿@model Account
+
+
+
+<form method="post" asp-action="Delete">
+    <input asp-for="AccountNumber" hidden />
+    <div class="border p-3 mt-4">
+        <div class=" = row pb-2">
+            <h2 class="text-primary">Delete Customer</h2>
+            <hr />
+        </div>
+        <div class=" mb-3">
+            <label asp-for="AccountNumber"></label>
+            <input asp-for="AccountNumber" disabled class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="AccountType"></label>
+            <input asp-for="AccountType" disabled class="form-control" />
+
+        </div>
+        <div class=" mb-3">
+            <label asp-for="CurrentAccountBalance"></label>
+            <input asp-for="CurrentAccountBalance" disabled class="form-control" />
+
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Delete</button>
+        <a asp-controller="Accounts" asp-action="Index" class="btn btn-secondary" style="width:150px">Back To List</a>
+    </div>
+</form>
+@*@section Scripts{
+    @{
+    <partial name=*_ValidationScriptsPartial* />
+    }
+}*@
+
+
+
+
+
